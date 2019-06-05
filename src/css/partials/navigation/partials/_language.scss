@@ -1,0 +1,17 @@
+.portlet-language {
+    .btn-secondary.dropdown-toggle {
+        background-color: transparent;
+        border: none;
+    }
+
+    .inline-item {
+        display: none;
+    }
+
+    .btn-section {
+        color:black;
+    }
+}
+.ty-nav-language {
+    @include center-items
+}

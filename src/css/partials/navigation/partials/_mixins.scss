@@ -1,0 +1,6 @@
+@mixin center-items {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    color: $navbar-items-font-color;
+}

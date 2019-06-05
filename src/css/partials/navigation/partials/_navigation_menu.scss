@@ -1,0 +1,11 @@
+.ty-nav-navigation-menu {
+    a.nav-link.text-truncate {
+        color: $navbar-items-font-color;
+    }
+
+    a.nav-link.text-truncate:hover {
+        background-color: $brand-color;
+        color: #fff;
+        transition: background-color 250ms ease;
+    }
+}

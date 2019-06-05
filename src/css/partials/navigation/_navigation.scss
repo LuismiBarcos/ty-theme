@@ -1,0 +1,13 @@
+@import "partials/mixins";
+@import "partials/nav_variables";
+
+@import "partials/network";
+@import "partials/search";
+@import "partials/navigation_menu";
+@import "partials/user_personal_bar";
+@import "partials/language";
+
+.ty-nav-right-items {
+    display: flex;
+    align-items: baseline;
+}

@@ -1,0 +1,14 @@
+.portlet-user-personal-bar {
+    .inline-item {
+        height: 13px;
+        color: blue;
+    }
+    .user-icon-color-9 {
+        background-color: transparent;
+        border: none;
+    }
+}
+
+.ty-nav-user-personal-bar {
+    @include center-items;
+}
