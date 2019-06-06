@@ -1,14 +1,16 @@
 .portlet-user-personal-bar {
+    margin-right: 7px;
     .inline-item {
         height: 13px;
-        color: blue;
+        color: $navbar-items-font-color;
     }
-    .user-icon-color-9 {
-        background-color: transparent;
-        border: none;
+    .dropdown-toggle.btn.btn-unstyled:focus {
+        box-shadow: 0 0 0 0.2rem rgba(212, 14, 32, 0.25);
     }
 }
 
-.ty-nav-user-personal-bar {
-    @include center-items;
+.portlet-user-personal-bar:hover {
+    .inline-item {
+        color: $brand-color;
+    }
 }

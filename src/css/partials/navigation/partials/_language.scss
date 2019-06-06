@@ -13,5 +13,8 @@
     }
 }
 .ty-nav-language {
-    @include center-items
+    @include center-items;
+    .ty-nav-language-portlet {
+        margin-left: 5px;
+    }
 }

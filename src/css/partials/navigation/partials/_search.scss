@@ -1,3 +1,6 @@
 .ty-nav-search-btn {
-    @include center-items
+    @include center-items;
+    .ty-nav-search-btn-text {
+        margin-left: 5px;
+    }
 }
