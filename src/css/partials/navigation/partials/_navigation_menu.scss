@@ -1,11 +1,26 @@
 .ty-nav-navigation-menu {
     a.nav-link.text-truncate {
         color: $navbar-items-font-color;
+        font-size: $navbar-menu-items-font-size;
     }
 
     a.nav-link.text-truncate:hover {
         background-color: $brand-color;
         color: #fff;
         transition: background-color 250ms ease;
+    }
+
+    .lfr-nav-item.nav-item.selected.active {
+        a.nav-link.text-truncate {
+            background: linear-gradient(0deg, transparent, transparent 39px, $brand-color 3px);
+            background-position: 0 0px;
+            background-size: 100% calc(100% + 1px);
+            transition: background .6s ease, background-position .6s ease;
+        }
+
+        a.nav-link.text-truncate:hover {
+            background: $brand-color;
+            background-position: 0 71px;
+        }
     }
 }
