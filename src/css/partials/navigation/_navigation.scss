@@ -9,11 +9,14 @@
 
 .ty-nav {
     justify-content: normal;
-}
+    .logo {
+        margin-left: $navbar-margin;
+    }
 
-.ty-nav-right-items {
-    width: 50%;
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-end;
+    .ty-nav-right-items {
+        display: flex;
+        align-items: baseline;
+        justify-content: flex-end;
+        margin-right: $navbar-margin;
+    }
 }

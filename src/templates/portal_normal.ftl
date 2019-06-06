@@ -21,7 +21,7 @@
 <@liferay.control_menu />
 
 <div id="wrapper">
-	<header class="container-fluid-1280" id="banner" role="banner">
+	<header class="container-fluid" id="banner" role="banner">
 		<div class="row">
 			<#include "${full_templates_path}/navigation.ftl" />
 		</div>

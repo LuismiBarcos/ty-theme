@@ -4,3 +4,9 @@
     align-items: baseline;
     color: $navbar-items-font-color;
 }
+
+@mixin hidden-item {
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+}

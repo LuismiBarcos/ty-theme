@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-md ty-nav">
 	<div class="navbar-header" id="heading">
 		<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-			<img alt="${logo_description}" height="64" src="${site_logo}" width="64" />
+			<img alt="${logo_description}" height="64" src="${site_logo}" width="73" />
 		</a>
 	</div>
 	<#if has_navigation && is_setup_complete>
-		<div class="order-sm-3 order-md-1">
+		<div class="order-sm-3 order-md-1 mr-auto">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="glyphicon glyphicon-menu-hamburger"></span>
 			</button>
