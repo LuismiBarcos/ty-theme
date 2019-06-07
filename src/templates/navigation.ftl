@@ -1,11 +1,11 @@
-<nav class="navbar navbar-expand-md ty-nav">
-	<div class="navbar-header" id="heading">
+<nav class="navbar navbar-expand-lg ty-nav">
+	<div class="navbar-header mr-md-auto mr-lg-0" id="heading">
 		<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
 			<img alt="${logo_description}" height="64" src="${site_logo}" width="73" />
 		</a>
 	</div>
 	<#if has_navigation && is_setup_complete>
-		<div class="order-sm-3 order-md-1 mr-auto">
+		<div class="order-2 order-lg-1 mr-lg-auto">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="glyphicon glyphicon-menu-hamburger"></span>
 			</button>
@@ -17,7 +17,7 @@
 		</div>
 	</#if>
 
-	<div class="order-md-2 ty-nav-right-items">
+	<div class="order-1 ty-nav-right-items">
 		<div class="ty-nav-network">
 			<div class="ty-nav-network-icon" >
 				<@liferay_ui["icon"] icon="geolocation" markupView="lexicon" />

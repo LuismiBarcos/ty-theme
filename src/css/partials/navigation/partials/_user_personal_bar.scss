@@ -5,7 +5,7 @@
         color: $navbar-items-font-color;
     }
     .dropdown-toggle.btn.btn-unstyled:focus {
-        box-shadow: 0 0 0 0.2rem rgba(212, 14, 32, 0.25);
+        box-shadow: 0 0 0 0.2rem $navbar-items-focus-color
     }
 }
 

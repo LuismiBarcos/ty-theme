@@ -13,10 +13,22 @@
         margin-left: $navbar-margin;
     }
 
+    .navbar-toggler {
+        padding: 4px;
+        margin: 0px $navbar-margin 8px 4px;
+    }
+
+    .navbar-toggler:focus {
+        outline: 5px auto $navbar-items-focus-color;
+    }
+
     .ty-nav-right-items {
         display: flex;
         align-items: baseline;
         justify-content: flex-end;
         margin-right: $navbar-margin;
+        @include media-breakpoint-down(md) {
+            margin-right: 0px;
+        }
     }
 }
