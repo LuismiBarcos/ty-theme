@@ -11,6 +11,19 @@
     justify-content: normal;
     .logo {
         margin-left: $navbar-margin;
+        @include media-breakpoint-down(md) {
+            height: 34px;
+            width: 41px;
+            margin-right: auto;
+        }
+        img {
+            height: 41px;
+            width: 49px;
+            @include media-breakpoint-down(md) {
+                height: 34px;
+                width: 41px;
+            }
+        }
     }
 
     .navbar-toggler {

@@ -1,23 +1,23 @@
 <nav class="navbar navbar-expand-lg ty-nav">
-	<div class="navbar-header mr-md-auto mr-lg-0" id="heading">
+	<div class="navbar-header mr-auto mr-lg-0" id="heading">
 		<a class="${logo_css_class}" href="${site_default_url}" title="<@liferay.language_format arguments="${site_name}" key="go-to-x" />">
-			<img alt="${logo_description}" height="64" src="${site_logo}" width="73" />
+			<img alt="${logo_description}" src="${site_logo}" />
 		</a>
 	</div>
 	<#if has_navigation && is_setup_complete>
-		<div class="order-2 order-lg-1 mr-lg-auto">
+		<div class="order-3 order-lg-1 mr-lg-auto">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="glyphicon glyphicon-menu-hamburger"></span>
 			</button>
-			<div class="${nav_css_class} site-navigation navbar-collapse collapse" id="navigation" role="navigation">
+			<#--  <div class="${nav_css_class} site-navigation navbar-collapse collapse" id="navigation" role="navigation">
 				<div class="ty-nav-navigation-menu" >
 					<@liferay.navigation_menu default_preferences=freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone")  />
 				</div>
-			</div>
+			</div>  -->
 		</div>
 	</#if>
 
-	<div class="order-1 ty-nav-right-items">
+	<div class="order-2 ty-nav-right-items">
 		<div class="ty-nav-network">
 			<div class="ty-nav-network-icon" >
 				<@liferay_ui["icon"] icon="geolocation" markupView="lexicon" />
@@ -55,6 +55,12 @@
 					portletProviderClassName="com.liferay.portal.kernel.servlet.taglib.ui.LanguageEntry"
 				/>
 			</div>
+		</div>
+	</div>
+
+	<div class="${nav_css_class} site-navigation order-3 order-lg-1 mr-lg-auto navbar-collapse collapse" id="navigation" role="navigation">
+		<div class="ty-nav-navigation-menu" >
+			<@liferay.navigation_menu default_preferences=freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone")  />
 		</div>
 	</div>
 

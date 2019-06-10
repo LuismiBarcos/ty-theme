@@ -1,5 +1,6 @@
 .ty-nav-navigation-menu {
     margin-left: 1rem;
+    margin-right: 1rem;
     a.nav-link.text-truncate {
         color: $navbar-items-font-color;
         font-size: $navbar-menu-items-font-size;
@@ -22,6 +23,14 @@
         a.nav-link.text-truncate:hover {
             background: $brand-color;
             background-position: 0 71px;
+        }
+    }
+
+    .portlet-content {
+        .navbar-blank.navbar-nav.navbar-site {
+            @include media-breakpoint-down(md) {
+                flex-direction: column;
+            }
         }
     }
 }

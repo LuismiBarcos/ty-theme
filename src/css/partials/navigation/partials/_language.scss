@@ -1,20 +1,32 @@
-.portlet-language {
-    .btn-secondary.dropdown-toggle {
-        background-color: transparent;
-        border: none;
-    }
-
-    .inline-item {
-        display: none;
-    }
-
-    .btn-section {
-        color: $navbar-items-font-color;
-    }
-}
 .ty-nav-language {
     @include center-items;
     .ty-nav-language-portlet {
         margin-left: 5px;
+    }
+    .portlet-language {
+        .btn-secondary.dropdown-toggle {
+            background-color: transparent;
+            border: none;
+        }
+
+        .inline-item {
+            display: none;
+        }
+
+        .btn-section {
+            color: $navbar-items-font-color;
+        }
+
+        .portlet-content {
+            @include media-breakpoint-down(sm) {
+                border-color: transparent;
+            }
+        }
+
+        .portlet-topper {
+            @include media-breakpoint-down(sm) {
+                display:none;
+            }
+        }
     }
 }
