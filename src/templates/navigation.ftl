@@ -28,7 +28,7 @@
 		</div>
 
 		<div class="ty-nav-search">
-			<button class="btn" type="button" data-toggle="collapse" data-target="#search" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="btn" data-target="#clayDefaultModal" data-toggle="modal" type="button">
 				<div class="ty-nav-search-btn">
 					<div class="ty-nav-search-btn-icon">
 						<@liferay_ui["icon"] icon="search" markupView="lexicon" />
@@ -64,9 +64,10 @@
 		</div>
 	</div>
 
-	<div class="order-4 collapse" id="search">
+	<#--  <div class="order-4 collapse" id="search">
 		<@liferay.search
 			default_preferences=freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "decorate")
 		/>
-	</div>
+	</div>  -->
+	<#include "${full_templates_path}/modal.ftl" />
 </nav>

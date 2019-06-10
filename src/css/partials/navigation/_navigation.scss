@@ -3,6 +3,7 @@
 
 @import "partials/network";
 @import "partials/search";
+@import "partials/modal";
 @import "partials/navigation_menu";
 @import "partials/user_personal_bar";
 @import "partials/language";
@@ -16,9 +17,13 @@
             width: 41px;
             margin-right: auto;
         }
+        @include media-breakpoint-down(sm) {
+            margin-left: 1rem;
+        }
         img {
             height: 41px;
             width: 49px;
+            margin-bottom: 18px;
             @include media-breakpoint-down(md) {
                 height: 34px;
                 width: 41px;
@@ -29,6 +34,9 @@
     .navbar-toggler {
         padding: 4px;
         margin: 0px $navbar-margin 8px 4px;
+        @include media-breakpoint-down(sm) {
+            margin: 0px 1rem 8px 4px;
+        }
     }
 
     .navbar-toggler:focus {

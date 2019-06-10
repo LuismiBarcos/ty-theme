@@ -1,0 +1,28 @@
+.ty-nav-search-modal {
+    #clayDefaultModal {
+        display: none;
+    }
+
+    .modal-dialog {
+        position: absolute;
+        height: inherit;
+        width: inherit;
+        margin: 0 auto;
+        left: 40%;
+        @include media-breakpoint-down(sm) {
+            left: 20%;
+        }
+    }
+
+    .portlet-topper {
+        display: none;
+    }
+
+    .field-wrapper {
+        display: none;
+    }
+
+    .portlet .form-group {
+        margin-bottom: 0px;
+    }
+}
