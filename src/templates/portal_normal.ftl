@@ -27,7 +27,7 @@
 		</div>
 	</header>
 
-	<section class="container-fluid-1280" id="content">
+	<section class="container-fluid" id="content">
 		<h1 class="hide-accessible">${the_title}</h1>
 
 		<#if selectable>
@@ -43,7 +43,7 @@
 		</#if>
 	</section>
 
-	<footer class="container-fluid-1280" id="footer" role="contentinfo">
+	<footer class="container-fluid" id="footer" role="contentinfo">
 		<div class="row">
 			<@liferay.language key="powered-by" /> <a href="http://www.liferay.com" rel="external">Liferay</a>
 		</div>
