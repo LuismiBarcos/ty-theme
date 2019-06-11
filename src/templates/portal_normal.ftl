@@ -27,7 +27,7 @@
 		</div>
 	</header>
 
-	<section class="container-fluid" id="content">
+	<section id="content">
 		<h1 class="hide-accessible">${the_title}</h1>
 
 		<#if selectable>
