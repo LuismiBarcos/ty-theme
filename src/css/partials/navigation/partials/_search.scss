@@ -12,6 +12,8 @@
             @include hidden-item;
             margin-left: 5px;
             font-weight: 400;
+            font-size: $navbar-menu-items-font-size;
+            margin-bottom: 5px;
         }
     }
 }

@@ -1,16 +1,17 @@
-.portlet-user-personal-bar {
-    margin-right: 8px;
-    .inline-item {
-        height: 13px;
-        color: $navbar-items-font-color;
+.ty-nav-user-personal-bar{
+    .portlet-user-personal-bar {
+        margin-right: 8px;
+        .inline-item {
+            color: $navbar-items-font-color;
+        }
+        .dropdown-toggle.btn.btn-unstyled:focus {
+            box-shadow: 0 0 0 0.2rem $navbar-items-focus-color
+        }
     }
-    .dropdown-toggle.btn.btn-unstyled:focus {
-        box-shadow: 0 0 0 0.2rem $navbar-items-focus-color
-    }
-}
 
-.portlet-user-personal-bar:hover {
-    .inline-item {
-        color: $brand-color;
+    .portlet-user-personal-bar:hover {
+        .inline-item {
+            color: $brand-color;
+        }
     }
 }

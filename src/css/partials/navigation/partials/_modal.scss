@@ -6,7 +6,7 @@
     .modal-dialog {
         position: absolute;
         height: inherit;
-        width: inherit;
+        width: unset;
         margin: 0 auto;
         left: 40%;
         @include media-breakpoint-down(sm) {

@@ -7,6 +7,8 @@
         .btn-secondary.dropdown-toggle {
             background-color: transparent;
             border: none;
+            width: 50px;
+            margin-bottom: 5px;
         }
 
         .inline-item {
@@ -15,6 +17,8 @@
 
         .btn-section {
             color: $navbar-items-font-color;
+            font-size: $navbar-menu-items-font-size;
+            width: 50px;
         }
 
         .portlet-content {

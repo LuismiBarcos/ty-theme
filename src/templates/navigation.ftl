@@ -7,7 +7,7 @@
 	<#if has_navigation && is_setup_complete>
 		<div class="order-3 order-lg-1 mr-lg-auto">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="glyphicon glyphicon-menu-hamburger"></span>
+				<@liferay_ui["icon"] icon="align-justify" markupView="lexicon" />
 			</button>
 			<#--  <div class="${nav_css_class} site-navigation navbar-collapse collapse" id="navigation" role="navigation">
 				<div class="ty-nav-navigation-menu" >
