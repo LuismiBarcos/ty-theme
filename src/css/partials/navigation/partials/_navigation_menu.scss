@@ -1,7 +1,10 @@
 .ty-nav-navigation-menu {
     margin-left: 1rem;
-    margin-right: 1rem;
     margin-bottom: -10px;
+    @include media-breakpoint-down(md) {
+        margin-left: 0;
+        margin-right: 0;
+    }
     a.nav-link.text-truncate {
         color: $navbar-items-font-color;
         font-size: $navbar-menu-items-font-size;
@@ -38,6 +41,17 @@
             .navbar-blank.navbar-nav.navbar-site {
                 @include media-breakpoint-down(md) {
                     flex-direction: column;
+                    // background-color: red;
+                    // color: #202020;
+                    // border-bottom: 1px solid rgba(0,0,0,.05);
+                    a.nav-link.text-truncate {
+                        font-size: $navbar-menu-items-font-size;
+                        font-family: $navbar-font-family;
+                        font-weight: $navbar-font-weight;
+                        background-color: #f0f0f0;
+                        color: #202020;
+                        border-bottom: 1px solid rgba(0,0,0,.05);
+                    }
                 }
             }
         }
