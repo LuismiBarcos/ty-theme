@@ -12,6 +12,25 @@
         @include media-breakpoint-down(sm) {
             left: 9%;
         }
+        .modal-footer {
+            .ty-nav-search-modal-btn-cancel {
+                border-color: $brand-color;
+                color: $brand-color;
+                border-radius: 100px;
+            }
+            .ty-nav-search-modal-btn-search {
+                background-color: $brand-color;
+                border-color: transparent;
+                color: white;
+                border-radius: 100px;
+            }
+            .ty-nav-search-modal-btn-search:hover {
+                background-color: #ce0000;
+            }
+            .ty-nav-search-modal-btn-cancel:hover {
+                background-color: #fbeded;
+            }
+        }
     }
 
     .portlet-topper {

@@ -17,10 +17,10 @@
                     <div class="modal-item-last">
                         <div class="btn-group">
                             <div class="btn-group-item">
-                                <button class="btn btn-secondary" data-dismiss="modal" type="button">Close</button>
+                                <button class="btn btn-secondary ty-nav-search-modal-btn-cancel" data-dismiss="modal" type="button">Close</button>
                             </div>
                             <div class="btn-group-item">
-                                <button class="btn btn-primary" type="button">Primary</button>
+                                <button class="btn btn-primary ty-nav-search-modal-btn-search" type="button">Search</button>
                             </div>
                         </div>
                     </div>
