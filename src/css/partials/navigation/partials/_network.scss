@@ -3,5 +3,6 @@
     .ty-nav-network-text {
         @include hidden-item;
         font-size: $navbar-menu-items-font-size;
+        font-family: $navbar-font-family;
     }
 }

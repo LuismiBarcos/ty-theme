@@ -1,0 +1,9 @@
+@font-face {
+    font-family: "T1 Body Font";
+    src: url(notosans/NotoSans.woff);
+}
+
+@font-face {
+    font-family: "T1 Body Font Bold";
+    src: url(notosans/NotoSans-Bold.woff);
+}

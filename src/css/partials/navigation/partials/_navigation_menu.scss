@@ -4,6 +4,7 @@
     a.nav-link.text-truncate {
         color: $navbar-items-font-color;
         font-size: $navbar-menu-items-font-size;
+        font-family: $navbar-font-family;
     }
 
     a.nav-link.text-truncate:hover {
