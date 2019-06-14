@@ -4,6 +4,7 @@
         .inline-item {
             color: $navbar-items-font-color;
             font-family: $navbar-font-family;
+            font-weight: $navbar-font-weight;
         }
         .dropdown-toggle.btn.btn-unstyled:focus {
             box-shadow: 0 0 0 0.2rem $navbar-items-focus-color
@@ -15,10 +16,26 @@
             color: $brand-color;
         }
     }
+
+    .sign-in {
+        .sign-in.text-default {
+            color:$navbar-items-font-color;
+            font-weight: $navbar-font-weight;
+            .taglib-icon-label {
+                margin-left: 3px;
+            }
+        }
+
+        a.sign-in.text-default:hover {
+            text-decoration: none;
+            color: $brand-color;
+        }
+    }
 }
 
 #clay_dropdown_portal {
     .dropdown-item {
         font-family: $navbar-font-family;
+        font-weight: $navbar-font-weight;
     }
 }

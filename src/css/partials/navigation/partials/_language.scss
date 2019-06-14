@@ -19,6 +19,7 @@
             color: $navbar-items-font-color;
             font-size: $navbar-menu-items-font-size;
             font-family: $navbar-font-family;
+            font-weight: $navbar-font-weight;
             width: 50px;
         }
 
@@ -33,6 +34,15 @@
             @include media-breakpoint-down(sm) {
                 display:none;
             }
+        }
+    }
+}
+
+.ty-nav-language:hover {
+    color: $brand-color;
+    .portlet-language {
+        .btn-section {
+            color: $brand-color;
         }
     }
 }

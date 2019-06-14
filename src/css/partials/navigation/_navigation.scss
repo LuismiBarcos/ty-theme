@@ -24,23 +24,29 @@
             height: 41px;
             width: 49px;
             margin-bottom: 18px;
+            margin-top: 14px;
             @include media-breakpoint-down(md) {
                 height: 34px;
                 width: 41px;
+                margin-top: 0px;
             }
         }
     }
 
     .navbar-toggler {
         padding: 4px;
-        margin: 0px $navbar-margin 8px 4px;
+        margin: 5px $navbar-margin 8px 4px;
         @include media-breakpoint-down(sm) {
-            margin: 0px 1rem 8px 4px;
+            margin: 5px 1rem 8px 4px;
         }
     }
 
+    .navbar-toggler:hover {
+        color: $brand-color;
+    }
+
     .navbar-toggler:focus {
-        outline: 5px auto $navbar-items-focus-color;
+        outline: none;
     }
 
     .ty-nav-right-items {
@@ -48,6 +54,7 @@
         align-items: baseline;
         justify-content: flex-end;
         margin-right: $navbar-margin;
+        margin-top:12px;
         @include media-breakpoint-down(md) {
             margin-right: 0px;
         }

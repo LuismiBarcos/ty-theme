@@ -1,10 +1,13 @@
 .ty-nav-navigation-menu {
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-bottom: -10px;
     a.nav-link.text-truncate {
         color: $navbar-items-font-color;
         font-size: $navbar-menu-items-font-size;
         font-family: $navbar-font-family;
+        font-weight: $navbar-font-weight;
+        padding: 26px 20px;
     }
 
     a.nav-link.text-truncate:hover {
@@ -15,7 +18,7 @@
 
     .lfr-nav-item.nav-item.selected.active {
         a.nav-link.text-truncate {
-            background: linear-gradient(0deg, transparent, transparent 39px, $brand-color 3px);
+            background: linear-gradient(0deg, transparent, transparent 70px, $brand-color 3px);
             background-position: 0 0px;
             background-size: 100% calc(100% + 1px);
             transition: background .6s ease, background-position .6s ease;
@@ -27,11 +30,22 @@
         }
     }
 
-    .portlet-content {
-        .navbar-blank.navbar-nav.navbar-site {
-            @include media-breakpoint-down(md) {
-                flex-direction: column;
+    .portlet{
+        .portlet-content.portlet-content-editable{
+            border-style: inherit;
+        }
+        .portlet-content {
+            .navbar-blank.navbar-nav.navbar-site {
+                @include media-breakpoint-down(md) {
+                    flex-direction: column;
+                }
             }
+        }
+    }
+
+    .portlet:hover{
+        .portlet-content.portlet-content-editable{
+            border-style: solid;
         }
     }
 }

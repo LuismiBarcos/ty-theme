@@ -7,14 +7,26 @@
     }
     .ty-nav-search-btn {
         @include center-items;
-        margin-bottom: 2px;
+        @include media-breakpoint-down(lg) {
+            margin-top: 0px;
+            margin-bottom: 2px;
+        }
         .ty-nav-search-btn-text {
             @include hidden-item;
             margin-left: 5px;
             font-weight: 400;
             font-size: $navbar-menu-items-font-size;
             font-family: $navbar-font-family;
+            font-weight: $navbar-font-weight;
             margin-bottom: 5px;
         }
     }
+
+    .ty-nav-search-btn:hover {
+        color: $brand-color;
+    }
+}
+
+.ty-nav-search .btn:focus {
+    box-shadow: none;
 }
