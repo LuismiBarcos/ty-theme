@@ -10,7 +10,7 @@
                 </div>
                 <div class="modal-body">
                     <@liferay.search
-                        default_preferences=freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "decorate")
+                        default_preferences=freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone")
                     />
                 </div>
                 <div class="modal-footer">

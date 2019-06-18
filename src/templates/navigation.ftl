@@ -9,11 +9,6 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 				<@liferay_ui["icon"] icon="align-justify" markupView="lexicon" />
 			</button>
-			<#--  <div class="${nav_css_class} site-navigation navbar-collapse collapse" id="navigation" role="navigation">
-				<div class="ty-nav-navigation-menu" >
-					<@liferay.navigation_menu default_preferences=freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone")  />
-				</div>
-			</div>  -->
 		</div>
 	</#if>
 
@@ -50,7 +45,7 @@
 			</div>
 			<div class="ty-nav-language-portlet">
 				<@liferay_portlet["runtime"]
-					defaultPreferences=freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "decorate")
+					defaultPreferences=freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone")
 					portletProviderAction=portletProviderAction.VIEW
 					portletProviderClassName="com.liferay.portal.kernel.servlet.taglib.ui.LanguageEntry"
 				/>
@@ -63,11 +58,5 @@
 			<@liferay.navigation_menu default_preferences=freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "barebone")  />
 		</div>
 	</div>
-
-	<#--  <div class="order-4 collapse" id="search">
-		<@liferay.search
-			default_preferences=freeMarkerPortletPreferences.getPreferences("portletSetupPortletDecoratorId", "decorate")
-		/>
-	</div>  -->
 	<#include "${full_templates_path}/modal.ftl" />
 </nav>
