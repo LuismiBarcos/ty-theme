@@ -1,0 +1,23 @@
+.ty-footer{
+    .ty-footer-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 36px;
+        .ty-footer-social ul {
+            display: flex;
+            flex-direction: row;
+            .ty-footer-social-item {
+                padding: 0px 2px;
+                img {
+                    width: 48px;
+                    opacity: 0.5;
+                }
+                img:hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
