@@ -14,3 +14,7 @@ body {
 #currentHead {
 	display: none;
 }
+
+body *::selection {
+	background-color: $brand-color;
+}
