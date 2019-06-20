@@ -10,6 +10,9 @@
 	<meta content="initial-scale=1.0, width=device-width" name="viewport" />
 
 	<@liferay_util["include"] page=top_head_include />
+
+	<link href="${javascript_folder}/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+	<script src="${javascript_folder}/vendor/fancybox-master/jquery.fancybox.min.js"></script>
 </head>
 
 <body class="${css_class}">
