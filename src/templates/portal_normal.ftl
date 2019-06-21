@@ -11,8 +11,9 @@
 
 	<@liferay_util["include"] page=top_head_include />
 
-	<link href="${javascript_folder}/vendor/fancybox-master/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
-	<script src="${javascript_folder}/vendor/fancybox-master/jquery.fancybox.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="${javascript_folder}/vendor/lightcase-2.5.0/src/css/lightcase.css">
+    <script type="text/javascript" src="${javascript_folder}/vendor/lightcase-2.5.0/src/js/lightcase.js"></script>
+	<script type="text/javascript" src="${javascript_folder}/vendor/lightcase-2.5.0/vendor/jQuery/jquery.events.touch.js"></script>
 </head>
 
 <body class="${css_class}">
