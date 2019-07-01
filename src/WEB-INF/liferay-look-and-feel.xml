@@ -7,6 +7,9 @@
 	</compatibility>
 	<theme id="toyota" name="Toyota">
 		<template-extension>ftl</template-extension>
+		<settings>
+			<setting configurable="true" key="add-container" type="checkbox" value="false" />
+		</settings>
 		<portlet-decorator id="barebone" name="Barebone">
 			<default-portlet-decorator>true</default-portlet-decorator>
 			<portlet-decorator-css-class>portlet-barebone</portlet-decorator-css-class>

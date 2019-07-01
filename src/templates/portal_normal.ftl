@@ -32,19 +32,25 @@
 	</header>
 
 	<section id="content">
-		<h1 class="hide-accessible">${the_title}</h1>
-
-		<#if selectable>
-			<@liferay_util["include"] page=content_include />
+		<#if add_container>
+			<div class="container">
 		<#else>
-			${portletDisplay.recycle()}
-
-			${portletDisplay.setTitle(the_title)}
-
-			<@liferay_theme["wrap-portlet"] page="portlet.ftl">
-				<@liferay_util["include"] page=content_include />
-			</@>
+			<div class="container-fluid px-0">
 		</#if>
+			<h1 class="hide-accessible">${the_title}</h1>
+
+			<#if selectable>
+				<@liferay_util["include"] page=content_include />
+			<#else>
+				${portletDisplay.recycle()}
+
+				${portletDisplay.setTitle(the_title)}
+
+				<@liferay_theme["wrap-portlet"] page="portlet.ftl">
+					<@liferay_util["include"] page=content_include />
+				</@>
+			</#if>
+		</div>
 	</section>
 
 	<#include "${full_templates_path}/footer.ftl" />
